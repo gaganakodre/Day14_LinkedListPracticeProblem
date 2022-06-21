@@ -73,6 +73,18 @@ namespace Day14_LinkedList
                 temp.next = newNode;
             }
         }
+        public void DeleteNodeAtFirst()
+        {
+            if (Head == null & Tail == null)
+            {
+                Console.WriteLine("Nothing to delete list is empty");
+            }
+            Node temp = Head;
+            //Change head to next node to delete the previous node
+            Head = Head.next;
+
+            Console.WriteLine("Removed from linkedlist :" + temp.data);
+        }
         internal void Display()
         {
             //temp variable will head
