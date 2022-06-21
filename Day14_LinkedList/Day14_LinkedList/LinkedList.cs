@@ -27,11 +27,32 @@ namespace Day14_LinkedList
             }
             else
             {
-                ////If node than add new node as head //70 will be add 1st then 30 and 56
+                ////If node than add new node as head 
                 node.next = Head;
                 Head = node;
             }
             Console.WriteLine($" Added {value} at start of the linkedlist");
+        }
+        public void AppendNode(int value)
+        {
+            Node node = new Node(value);
+            //Check wheather the list is empty then creates node as head
+            if (Head == null & Tail == null)
+            {
+                Head = node;
+                Tail = node;
+            }
+            else
+            {
+                Node temp = Head;
+                ////If node than add new node as head 
+                while (temp.next != null)
+                {
+                    temp = temp.next;
+                }
+                temp.next = node;
+            }
+            Console.WriteLine($"Added {value} at start of the linkedlist");
         }
         internal void Display()
         {
