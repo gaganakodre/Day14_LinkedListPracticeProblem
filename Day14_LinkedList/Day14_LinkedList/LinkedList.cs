@@ -120,6 +120,54 @@ namespace Day14_LinkedList
             }
             return false;
         }
+
+
+        public int getCount()
+        {
+            Node temp = Head;
+            int count = 0;
+            while (temp != null)
+            {
+                count++;
+                temp = temp.next;
+            }
+            return count;
+            
+        }
+        public void deleteNode(int key)
+        {
+            // Store head node
+            Node temp = Head, prev = null;
+
+            // If head node itself holds
+            // the key to be deleted
+            if (temp != null &&
+                temp.data == key)
+            {
+                // Changed head
+                Head = temp.next;
+                return;
+            }
+
+            // Search for the key to be
+            // deleted, keep track of the
+            // previous node as we need
+            // to change temp.next
+            while (temp != null &&
+                   temp.data != key)
+            {
+                prev = temp;
+                temp = temp.next;
+            }
+
+            // If key was not present
+            // in linked list
+            if (temp == null)
+                return;
+
+            // Unlink the node from linked list
+            prev.next = temp.next;
+        }
         internal void Display()
         {
             //temp variable will head

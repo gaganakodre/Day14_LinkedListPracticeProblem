@@ -73,12 +73,26 @@
             //}
             //Console.WriteLine("**********56-> 30-> 70***Node with value 30 is available in Linked list********************************");
             ////UC-8
+            //linkedLists.AppendNode(56);
+            //linkedLists.AppendNode(30);
+            //linkedLists.AppendNode(70);
+            //linkedLists.InsertNode(40,30);
+            //linkedLists.Display();
+            /////uc9
             Console.WriteLine("Add Node After Node value 30 ");
             linkedLists.AppendNode(56);
             linkedLists.AppendNode(30);
+            linkedLists.AppendNode(40);
             linkedLists.AppendNode(70);
-            linkedLists.InsertNode(40, 30);
+            Console.WriteLine("before deleting:");
             linkedLists.Display();
+            linkedLists.deleteNode(40);
+            Console.WriteLine("afore deleting:");
+            linkedLists.Display();
+            Console.WriteLine("Count of nodes is " + linkedLists.getCount());
+
+
+
 
 
 
