@@ -16,22 +16,42 @@ namespace Day14_LinkedList
             Head = null;
             Tail = null;
         }
-
+        public void AddNode(int value)
+        {
+            Node node = new Node(value);
+            //Check wheather the list is empty then creates node as head
+            if (Head == null & Tail == null)
+            {
+                Head = node;
+                Tail = node;
+            }
+            else
+            {
+                ////If node than add new node as head //70 will be add 1st then 30 and 56
+                node.next = Head;
+                Head = node;
+            }
+            Console.WriteLine($" Added {value} at start of the linkedlist");
+        }
         internal void Display()
         {
-
+            //temp variable will head
             Node temp = Head;
+            //Check wheather list is empty or not 
             if (temp == null)
                 Console.WriteLine("Linked list is empty");
             else
                 Console.WriteLine("Linked List:");
             while (temp != null)
             {
+                //Check until temp will null
                 Console.Write(temp.data);
                 if (temp.next != null)
                     Console.Write(" -> ");
+                //for traversing the node
                 temp = temp.next;
             }
+
         }
     }
 }
