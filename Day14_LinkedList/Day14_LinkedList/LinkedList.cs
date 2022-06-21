@@ -104,6 +104,22 @@ namespace Day14_LinkedList
             //After getting this node change its location to null
             temp.next = null;
         }
+        public bool Search(int value)
+        {
+            //Temp variable is head now
+            Node temp = Head;
+            //Check until temp location will null
+            while (temp != null)
+            {
+                //If temp node data is equal to value to be searched
+                if (temp.data == value)
+                {
+                    return true;
+                }
+                temp = temp.next;
+            }
+            return false;
+        }
         internal void Display()
         {
             //temp variable will head
