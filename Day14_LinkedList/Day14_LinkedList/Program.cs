@@ -43,13 +43,21 @@
             //    " Linked List:56-> 30-> 70 * ************************************************************");
             ////uc5
             ////UC-5
+            //linkedLists.AppendNode(56);
+            //linkedLists.AppendNode(30);
+            //linkedLists.AppendNode(70);
+            //Console.WriteLine("Delete First element");
+            //linkedLists.DeleteNodeAtFirst();
+            //linkedLists.Display();
+            //Console.WriteLine("**********56 removed and remaing linkedlist is 30->70******************");
+            ////UC-6
             linkedLists.AppendNode(56);
             linkedLists.AppendNode(30);
             linkedLists.AppendNode(70);
-            Console.WriteLine("Delete First element");
-            linkedLists.DeleteNodeAtFirst();
+            Console.WriteLine("Delete Last element");
+            linkedLists.DeleteNodeAtLast();
             linkedLists.Display();
-            Console.WriteLine("****************************");
+            Console.WriteLine("\n-------------------------------");
 
 
 
