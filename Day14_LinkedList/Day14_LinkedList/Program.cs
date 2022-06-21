@@ -26,14 +26,26 @@
             //    "Added 56 at start of the linkedlist " +
             //    "Linked List:56-> 30-> 70->* ********************");
             ////UC-3
+            //linkedLists.AppendNode(56);
+            //linkedLists.AppendNode(30);
+            //linkedLists.AppendNode(70);
+            //linkedLists.Display();
+            //Console.WriteLine("*****************************Added 56 at start of the linkedlist " +
+            //    "Added 30 at start of the linkedlist" +
+            //    " Added 70 at start of the linkedlist Linked List:56-> 30-> 70************");
+            //uc4
             linkedLists.AppendNode(56);
-            linkedLists.AppendNode(30);
             linkedLists.AppendNode(70);
+            linkedLists.InsertNode(30, 56);
             linkedLists.Display();
-            Console.WriteLine("*****************************Added 56 at start of the linkedlist " +
-                "Added 30 at start of the linkedlist" +
-                " Added 70 at start of the linkedlist Linked List:56-> 30-> 70");
-            
+            Console.WriteLine("***uc4****Added 56 at start of the linkedlist" +
+                " Added 70 at start of the linkedlist" +
+                " Linked List:56-> 30-> 70 * ************************************************************");
+
+
+
+
+
 
 
 

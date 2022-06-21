@@ -54,6 +54,25 @@ namespace Day14_LinkedList
             }
             Console.WriteLine($"Added {value} at start of the linkedlist");
         }
+        public void InsertNode(int value, int Previousvalue)
+        {
+            Node newNode = new Node(value);
+            if (Head == null & Tail == null)
+            {
+                Head = newNode;
+            }
+            else
+            {
+                Node temp = Head;
+                //Checking until temp variable data equal to the previous value of value to be added
+                while (temp.data != Previousvalue)
+                {
+                    temp = temp.next;
+                }
+                newNode.next = temp.next;
+                temp.next = newNode;
+            }
+        }
         internal void Display()
         {
             //temp variable will head
