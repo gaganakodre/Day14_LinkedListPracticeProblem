@@ -15,6 +15,8 @@ namespace Day14_LinkedList
         {
             Head = null;
             Tail = null;
+            
+
         }
         public void AddNode(int value)
         {
@@ -168,6 +170,9 @@ namespace Day14_LinkedList
             // Unlink the node from linked list
             prev.next = temp.next;
         }
+       
+       
+
         internal void Display()
         {
             //temp variable will head

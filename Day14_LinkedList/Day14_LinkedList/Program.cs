@@ -1,4 +1,6 @@
-﻿namespace Day14_LinkedList
+﻿using static Day14_LinkedList.CreateList;
+
+namespace Day14_LinkedList
 {
     class Program
     {
@@ -79,17 +81,37 @@
             //linkedLists.InsertNode(40,30);
             //linkedLists.Display();
             /////uc9
-            Console.WriteLine("Add Node After Node value 30 ");
-            linkedLists.AppendNode(56);
-            linkedLists.AppendNode(30);
-            linkedLists.AppendNode(40);
-            linkedLists.AppendNode(70);
-            Console.WriteLine("before deleting:");
-            linkedLists.Display();
-            linkedLists.deleteNode(40);
-            Console.WriteLine("afore deleting:");
-            linkedLists.Display();
-            Console.WriteLine("Count of nodes is " + linkedLists.getCount());
+            //Console.WriteLine("Add Node After Node value 30 ");
+            //linkedLists.AppendNode(56);
+            //linkedLists.AppendNode(30);
+            //linkedLists.AppendNode(40);
+            //linkedLists.AppendNode(70);
+            //Console.WriteLine("before deleting:");
+            //linkedLists.Display();
+            //linkedLists.deleteNode(40);
+            //Console.WriteLine("afore deleting:");
+            //linkedLists.Display();
+            //Console.WriteLine("Count of nodes is " + linkedLists.getCount());
+            //uc10
+            SortList<int> sList = new SortList<int>();
+
+            //Adds data to the list  
+            sList.addNode(56);
+            sList.addNode(30);
+            sList.addNode(40);
+            sList.addNode(70);
+           
+
+            //Displaying original list  
+            Console.WriteLine("Original list: ");
+            sList.display();
+
+            //Sorting list  
+            sList.sortList();
+
+            //Displaying sorted list  
+            Console.WriteLine("Sorted list: ");
+            sList.display();
 
 
 
