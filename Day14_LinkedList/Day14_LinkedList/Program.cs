@@ -59,20 +59,28 @@
             //linkedLists.Display();
             //Console.WriteLine("*************70 is removed linkedlist:56->30**********************");
             //UC-7
-            Node node1 = new Node(56);
-            Node node2 = new Node(30);
-            Node node3 = new Node(70);
-            node1.next = node2;
-            node2.next = node3;
-            linkedLists.Head = node1;
-            Console.WriteLine("Search For Node value 30");
+            //Node node1 = new Node(56);
+            //Node node2 = new Node(30);
+            //Node node3 = new Node(70);
+            //node1.next = node2;
+            //node2.next = node3;
+            //linkedLists.Head = node1;
+            //Console.WriteLine("Search For Node value 30");
+            //linkedLists.Display();
+            //if (linkedLists.Search(30))
+            //{
+            //    Console.WriteLine("\nNode with value 30 is available in Linked list");
+            //}
+            //Console.WriteLine("**********56-> 30-> 70***Node with value 30 is available in Linked list********************************");
+            ////UC-8
+            Console.WriteLine("Add Node After Node value 30 ");
+            linkedLists.AppendNode(56);
+            linkedLists.AppendNode(30);
+            linkedLists.AppendNode(70);
+            linkedLists.InsertNode(40, 30);
             linkedLists.Display();
-            if (linkedLists.Search(30))
-            {
-                Console.WriteLine("\nNode with value 30 is available in Linked list");
-            }
-            Console.WriteLine("**********56-> 30-> 70***Node with value 30 is available in Linked list********************************");
-            
+
+
 
 
 
