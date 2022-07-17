@@ -23,10 +23,10 @@ namespace Day14_LinkedList
             //linkedLists.AddNode(30);
             //linkedLists.AddNode(56);
             //linkedLists.Display();
-            //Console.WriteLine("*****************  Added 70 at start of the linkedlist " +
-            //    "Added 30 at start of the linkedlist " +
-            //    "Added 56 at start of the linkedlist " +
-            //    "Linked List:56-> 30-> 70->* ********************");
+            ////Console.WriteLine("*****************  Added 70 at start of the linkedlist " +
+            ////    "Added 30 at start of the linkedlist " +
+            ////    "Added 56 at start of the linkedlist " +
+            ////    "Linked List:56-> 30-> 70->* ********************");
             ////UC-3
             //linkedLists.AppendNode(56);
             //linkedLists.AppendNode(30);
@@ -34,8 +34,8 @@ namespace Day14_LinkedList
             //linkedLists.Display();
             //Console.WriteLine("*****************************Added 56 at start of the linkedlist " +
             //    "Added 30 at start of the linkedlist" +
-            //    " Added 70 at start of the linkedlist Linked List:56-> 30-> 70************");
-            //uc4
+            ////    " Added 70 at start of the linkedlist Linked List:56-> 30-> 70************");
+            ////uc4
             //linkedLists.AppendNode(56);
             //linkedLists.AppendNode(70);
             //linkedLists.InsertNode(30, 56);
@@ -48,6 +48,7 @@ namespace Day14_LinkedList
             //linkedLists.AppendNode(56);
             //linkedLists.AppendNode(30);
             //linkedLists.AppendNode(70);
+            //linkedLists.Display();
             //Console.WriteLine("Delete First element");
             //linkedLists.DeleteNodeAtFirst();
             //linkedLists.Display();
@@ -60,7 +61,7 @@ namespace Day14_LinkedList
             //linkedLists.DeleteNodeAtLast();
             //linkedLists.Display();
             //Console.WriteLine("*************70 is removed linkedlist:56->30**********************");
-            //UC-7
+            ////UC-7
             //Node node1 = new Node(56);
             //Node node2 = new Node(30);
             //Node node3 = new Node(70);
@@ -78,7 +79,7 @@ namespace Day14_LinkedList
             //linkedLists.AppendNode(56);
             //linkedLists.AppendNode(30);
             //linkedLists.AppendNode(70);
-            //linkedLists.InsertNode(40,30);
+            //linkedLists.InsertNode(40, 30);
             //linkedLists.Display();
             /////uc9
             //Console.WriteLine("Add Node After Node value 30 ");
@@ -92,45 +93,26 @@ namespace Day14_LinkedList
             //Console.WriteLine("afore deleting:");
             //linkedLists.Display();
             //Console.WriteLine("Count of nodes is " + linkedLists.getCount());
-            //uc10
-            SortList<int> sList = new SortList<int>();
+            ////uc10
+            //SortList<int> sList = new SortList<int>();
 
-            //Adds data to the list  
-            sList.addNode(56);
-            sList.addNode(30);
-            sList.addNode(40);
-            sList.addNode(70);
-           
-
-            //Displaying original list  
-            Console.WriteLine("Original list: ");
-            sList.display();
-
-            //Sorting list  
-            sList.sortList();
-
-            //Displaying sorted list  
-            Console.WriteLine("Sorted list: ");
-            sList.display();
+            ////Adds data to the list  
+            //sList.addNode(56);
+            //sList.addNode(30);
+            //sList.addNode(40);
+            //sList.addNode(70);
 
 
+            ////Displaying original list  
+            //Console.WriteLine("Original list: ");
+            //sList.display();
 
+            ////Sorting list  
+            //sList.sortList();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            ////Displaying sorted list  
+            //Console.WriteLine("Sorted list: ");
+            //sList.display(}
         }
     }
 }

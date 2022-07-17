@@ -13,7 +13,7 @@ namespace Day14_LinkedList
 
         public Node(int data)
         {
-            this.data = data;
+            this.data = data;//this keyword used for instance variables
             next = null;
         }
     }

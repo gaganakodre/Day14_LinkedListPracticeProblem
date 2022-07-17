@@ -18,24 +18,25 @@ namespace Day14_LinkedList
             
 
         }
-        public void AddNode(int value)
+        public void AddNode(int value)//add front
         {
             Node node = new Node(value);
             //Check wheather the list is empty then creates node as head
             if (Head == null & Tail == null)
             {
-                Head = node;
+                Head = node;//both head and gaile refered to same node now
                 Tail = node;
             }
             else
             {
                 ////If node than add new node as head 
-                node.next = Head;
+                node.next = Head;//add at first
                 Head = node;
             }
             Console.WriteLine($" Added {value} at start of the linkedlist");
         }
-        public void AppendNode(int value)
+        public void AppendNode(int value)//is also same code for addlast() method
+
         {
             Node node = new Node(value);
             //Check wheather the list is empty then creates node as head
@@ -58,7 +59,7 @@ namespace Day14_LinkedList
         }
         public void InsertNode(int value, int Previousvalue)
         {
-            Node newNode = new Node(value);
+            Node newNode = new Node(value);//40 node we have to create
             if (Head == null & Tail == null)
             {
                 Head = newNode;
@@ -83,7 +84,7 @@ namespace Day14_LinkedList
             }
             Node temp = Head;
             //Change head to next node to delete the previous node
-            Head = Head.next;
+            Head = Head.next;//assign head refence to the next 
 
             Console.WriteLine("Removed from linkedlist :" + temp.data);
         }
@@ -98,7 +99,7 @@ namespace Day14_LinkedList
 
             Node temp = Head;
             //Check until the temp next nodes's next loction is null
-            while (temp.next.next != null)
+            while (temp.next.next != null)//we have to find the second last node
             {
 
                 temp = temp.next;
@@ -144,7 +145,7 @@ namespace Day14_LinkedList
             // If head node itself holds
             // the key to be deleted
             if (temp != null &&
-                temp.data == key)
+                temp.data == key)//here head.data refers to head and 5
             {
                 // Changed head
                 Head = temp.next;
@@ -176,7 +177,7 @@ namespace Day14_LinkedList
         internal void Display()
         {
             //temp variable will head
-            Node temp = Head;
+            Node temp = Head;//refernce type
             //Check wheather list is empty or not 
             if (temp == null)
                 Console.WriteLine("Linked list is empty");
@@ -192,6 +193,23 @@ namespace Day14_LinkedList
                 temp = temp.next;
             }
 
+        }
+        public void sort()
+        {
+            Node i, j;
+            int temp;
+            for (i = this.Head; i.next != null; i = i.next)
+            {
+                for (j = i.next; j != null; j = j.next)
+                {
+                    if (i.data > j.data)
+                    {
+                        temp = i.data;
+                        i.data = j.data;
+                        j.data = temp;
+                    }
+                }
+            }
         }
     }
 }

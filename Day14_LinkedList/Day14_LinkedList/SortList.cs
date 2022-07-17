@@ -8,7 +8,7 @@ namespace Day14_LinkedList
 {
     public class CreateList
     {
-        //Represent a node of the singly linked list  
+        //Represent a node of` the singly linked list  
         public class Node<T>
         {
             public T data;
@@ -65,14 +65,14 @@ namespace Day14_LinkedList
                     while (current != null)
                     {
                         //Node index will point to node next to current  
-                        index = current.next;
+                        index = current.next;//set to head to comapre with index
 
                         while (index != null)
                         {
                             //If current node's data is greater than index's node data, swap the data between them  
-                            if (current.data.CompareTo(index.data) > 0)
+                            if (current.data.CompareTo(index.data) > 0)//if 1 greater, 0 equal,-1 left shift
                             {
-                                temp = current.data;
+                                temp = current.data;//swaping
                                 current.data = index.data;
                                 index.data = temp;
                             }
